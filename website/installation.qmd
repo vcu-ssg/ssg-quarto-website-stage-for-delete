@@ -1,0 +1,65 @@
+---
+title: Installation guide
+---
+
+This guide provides a step-by-step overview of how to install and use the financial report generator developed by the team of students at VCU.
+
+This report generating tool creates a custom powerpoint slide deck. Employees provide background information about the client and the portfolio size using a web browser. The tool generates a PPTX and returns it through the browser to the employee. The employee can then modify the PPTX and share it with the client and or customer.
+
+The system consists of two major parts: a *back-end* that runs on a windows machine connected to the company internal network, and a *front-end* that runs on a employees browser.
+
+# Pre-Installation Requirements
+
+This program is designed run on a windows machine within a secure, internal company LAN network. In general, this is something with an IP range like 192.168.1.*.  One machine on the network will be running the report generating tool. The other machines can access the tool through a browser.
+
+1. A Windows machine
+1. A powershell terminal.
+1. An internal office computer network
+
+# Software installation
+
+The following software applications need to be installed. These tools are open-source and available for download from the internet.
+
+a. Visual Studio Code (VS Code) - this is a text editor. Other editors (e.g., Notepad) can be used. We used VScode to develop this system.
+a. pyenv - this tools helps manage python environments and keep the correct version of python on your machine.
+a. quarto - this is the actual report generating tool. We built the financial reporting system on top of Quarto.
+
+## Install VS Code
+
+Below is a link to visual studio code. 
+
+<https://code.visualstudio.com/download>
+
+We recommend using the larger button to download the software, as identified in figure 1.
+
+![VSCode installation screen](assets/2023-05-22_06-49-13.png){width="8cm"}
+
+## Install pyenv
+
+Pyenv is a python manager. Using pyenv complicates the initial installation of the software tools but in the long run will help improve maintenance.
+
+<https://github.com/pyenv-win/pyenv-win>
+
+See the [quick start ](https://github.com/pyenv-win/pyenv-win#quick-start) for the gory details. We're looking to install python 3.11.3.
+
+## Install Quarto
+
+Quarto is a tool for documenting reproducible research and computations. We use Quarto to generate the custom figures and weave them together into a single PPTX.  Quarto can be downloaded from here:
+
+<https://quarto.org/docs/get-started/>
+
+## Install the financial reporting tool itself
+
+The financial tool is distributed as a python package. To install the tool, use this command from a powershell terminal:
+
+        pip install https://github.com/ssgvip/software-for-social-good-website/raw/main/components/finreport-0.1.0-py3-none-any.whl
+
+## Testing the installation
+
+*Zach - python will install the software in a locked folder. Should Adam/the user need to create a working folder on their machine, and populate
+this folder with the appropriate PPTX and other files. Is this where the logs will get created?*
+
+
+# Summary
+
+This guide provides a step-by-step overview of how to install and use the financial portfolio management software. Please ensure you comply with the security recommendations. For any further questions or concerns, refer to the separate instructions for template creation or reach out to the support team.

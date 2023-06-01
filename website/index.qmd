@@ -1,0 +1,16 @@
+---
+title: Welcome!
+---
+
+Students from the Software for Social Good VIP team at Virginia Commonwealth University designed, developed and deployed a report automation tool that streamlines the creation of custom Powerpoint slide decks.
+
+The tool consists of two primary subsystems: a *backend* that runs on a Windows machine connected to the company-internal network, and a *frontend* that runs on an employee’s web browser. Employees complete a form on their browser and submit it to the backend for processing. The backend creates a custom Powerpoint presentation using data provided by the employee, and pushes the newly created Powerpoint back to the employee, ready to share and present.
+
+
+# Acknowledgment
+
+The Software for Social Good team would like to extend our deep appreciation to Shawn Gibson of Overlay Shares and Liquid Strategies LLC for their generous gift that funded this project.
+
+Through their financial support and team mentoring, we gained invaluable project management and software engineering experience through designing, developing and deploying a software tool for a financial services company. The students gained practice using powerful data science tools including Quarto, Python and Git. 
+
+

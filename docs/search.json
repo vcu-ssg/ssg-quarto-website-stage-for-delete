@@ -1,0 +1,93 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "about page",
+    "section": "",
+    "text": "this is an about page"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome!",
+    "section": "",
+    "text": "Students from the Software for Social Good VIP team at Virginia Commonwealth University designed, developed and deployed a report automation tool that streamlines the creation of custom Powerpoint slide decks.\nThe tool consists of two primary subsystems: a backend that runs on a Windows machine connected to the company-internal network, and a frontend that runs on an employee’s web browser. Employees complete a form on their browser and submit it to the backend for processing. The backend creates a custom Powerpoint presentation using data provided by the employee, and pushes the newly created Powerpoint back to the employee, ready to share and present.\n\nAcknowledgment\nThe Software for Social Good team would like to extend our deep appreciation to Shawn Gibson of Overlay Shares and Liquid Strategies LLC for their generous gift that funded this project.\nThrough their financial support and team mentoring, we gained invaluable project management and software engineering experience through designing, developing and deploying a software tool for a financial services company. The students gained practice using powerful data science tools including Quarto, Python and Git."
+  },
+  {
+    "objectID": "installation.html",
+    "href": "installation.html",
+    "title": "Installation guide",
+    "section": "",
+    "text": "This guide provides a step-by-step overview of how to install and use the financial report generator developed by the team of students at VCU.\nThis report generating tool creates a custom powerpoint slide deck. Employees provide background information about the client and the portfolio size using a web browser. The tool generates a PPTX and returns it through the browser to the employee. The employee can then modify the PPTX and share it with the client and or customer.\nThe system consists of two major parts: a back-end that runs on a windows machine connected to the company internal network, and a front-end that runs on a employees browser."
+  },
+  {
+    "objectID": "installation.html#install-vs-code",
+    "href": "installation.html#install-vs-code",
+    "title": "Installation guide",
+    "section": "Install VS Code",
+    "text": "Install VS Code\nBelow is a link to visual studio code.\nhttps://code.visualstudio.com/download\nWe recommend using the larger button to download the software, as identified in figure 1.\n\n\n\nVSCode installation screen"
+  },
+  {
+    "objectID": "installation.html#install-pyenv",
+    "href": "installation.html#install-pyenv",
+    "title": "Installation guide",
+    "section": "Install pyenv",
+    "text": "Install pyenv\nPyenv is a python manager. Using pyenv complicates the initial installation of the software tools but in the long run will help improve maintenance.\nhttps://github.com/pyenv-win/pyenv-win\nSee the quick start for the gory details. We’re looking to install python 3.11.3."
+  },
+  {
+    "objectID": "installation.html#install-quarto",
+    "href": "installation.html#install-quarto",
+    "title": "Installation guide",
+    "section": "Install Quarto",
+    "text": "Install Quarto\nQuarto is a tool for documenting reproducible research and computations. We use Quarto to generate the custom figures and weave them together into a single PPTX. Quarto can be downloaded from here:\nhttps://quarto.org/docs/get-started/"
+  },
+  {
+    "objectID": "installation.html#install-the-financial-reporting-tool-itself",
+    "href": "installation.html#install-the-financial-reporting-tool-itself",
+    "title": "Installation guide",
+    "section": "Install the financial reporting tool itself",
+    "text": "Install the financial reporting tool itself\nThe financial tool is distributed as a python package. To install the tool, use this command from a powershell terminal:\n    pip install https://github.com/ssgvip/software-for-social-good-website/raw/main/components/finreport-0.1.0-py3-none-any.whl"
+  },
+  {
+    "objectID": "installation.html#testing-the-installation",
+    "href": "installation.html#testing-the-installation",
+    "title": "Installation guide",
+    "section": "Testing the installation",
+    "text": "Testing the installation\nZach - python will install the software in a locked folder. Should Adam/the user need to create a working folder on their machine, and populate this folder with the appropriate PPTX and other files. Is this where the logs will get created?"
+  },
+  {
+    "objectID": "usersguide.html",
+    "href": "usersguide.html",
+    "title": "Users Guide",
+    "section": "",
+    "text": "To start the application, navigate to the correct src folder in your terminal. Then, run the following command: finreport. This will initiate the backend of the application."
+  },
+  {
+    "objectID": "usersguide.html#start-the-application",
+    "href": "usersguide.html#start-the-application",
+    "title": "Users Guide",
+    "section": "",
+    "text": "To start the application, navigate to the correct src folder in your terminal. Then, run the following command: finreport. This will initiate the backend of the application."
+  },
+  {
+    "objectID": "usersguide.html#access-the-application",
+    "href": "usersguide.html#access-the-application",
+    "title": "Users Guide",
+    "section": "Access the Application",
+    "text": "Access the Application\nDepending on the network configuration, other users on the same network can access the application by typing the IP address into their web browser. Ensure that your network settings allow this communication."
+  },
+  {
+    "objectID": "usersguide.html#shutdown-the-application",
+    "href": "usersguide.html#shutdown-the-application",
+    "title": "Users Guide",
+    "section": "Shutdown the Application",
+    "text": "Shutdown the Application\nshut down the app, simply type Control+C at the terminal. This will halt the program."
+  },
+  {
+    "objectID": "usersguide.html#modify-templates-using-vs-code",
+    "href": "usersguide.html#modify-templates-using-vs-code",
+    "title": "Users Guide",
+    "section": "Modify Templates Using VS Code",
+    "text": "Modify Templates Using VS Code\nTemplates are available on an as-needed basis. For modifications to the generic template verbiage and images, use Visual Studio Code (VS Code). Instructions for template creation are included separately."
+  }
+]

@@ -2,4 +2,4 @@
 title: about page
 ---
 
-this is an about page
+[John Leonard](about/about-leonard.qmd)

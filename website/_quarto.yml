@@ -2,6 +2,9 @@ project:
   type: website
   output-dir: ..\docs
 
+about:
+  template: broadside
+
 website:
   title: "SSG VIP Overlay Study"
   search:
@@ -17,6 +20,8 @@ website:
         file: installation.qmd
       - text: "Users Guide"
         file: usersguide.qmd
+      - text: "About Team"
+        file: about.qmd
     logo: assets/CS-icon-01.png #vcu computer science emblem 
     logo-href: /index.html
 

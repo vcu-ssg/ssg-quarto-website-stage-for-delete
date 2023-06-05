@@ -1,0 +1,24 @@
+---
+title: "John Leonard"
+about:
+  image: leonard.png
+  links:
+    - icon: twitter
+      text: twitter
+      href: https://twitter.com
+    - icon: github
+      text: Github
+      href: https://github.com
+---
+
+John Leonard is the Chief Data Scientist at Wengo Analytics. When not innovating on data platforms, Finley enjoys spending  time unicycling and playing with her pet iguana.
+
+## Education
+
+University of California, San Diego | San Diego, CA
+PhD in Engineering | June 1991
+
+## Experience
+
+Virginia Commonwealth University | Professor | 2016 - present
+

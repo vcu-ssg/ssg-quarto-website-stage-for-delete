@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>SSG VIP Overlay Study - Installation guide</title>
+<title>SSG VIP Overlay Study - John Leonard</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,22 +23,21 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,10 +68,10 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./assets/CS-icon-01.png" alt="" class="navbar-logo">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../assets/CS-icon-01.png" alt="" class="navbar-logo">
     </a>
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">SSG VIP Overlay Study</span>
     </a>
   </div>
@@ -83,19 +82,19 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html" rel="" target="">
+    <a class="nav-link" href="../index.html" rel="" target="">
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./installation.html" rel="" target="" aria-current="page">
+    <a class="nav-link" href="../installation.html" rel="" target="">
  <span class="menu-text">Installation</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./usersguide.html" rel="" target="">
+    <a class="nav-link" href="../usersguide.html" rel="" target="">
  <span class="menu-text">Users Guide</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html" rel="" target="">
+    <a class="nav-link" href="../about.html" rel="" target="">
  <span class="menu-text">About Team</span></a>
   </li>  
 </ul>
@@ -112,102 +111,49 @@ ul.task-list li input[type="checkbox"] {
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
-   
   <ul>
-  <li><a href="#pre-installation-requirements" id="toc-pre-installation-requirements" class="nav-link active" data-scroll-target="#pre-installation-requirements">Pre-Installation Requirements</a></li>
-  <li><a href="#software-installation" id="toc-software-installation" class="nav-link" data-scroll-target="#software-installation">Software installation</a>
-  <ul class="collapse">
-  <li><a href="#install-vs-code" id="toc-install-vs-code" class="nav-link" data-scroll-target="#install-vs-code">Install VS Code</a></li>
-  <li><a href="#install-pyenv" id="toc-install-pyenv" class="nav-link" data-scroll-target="#install-pyenv">Install pyenv</a></li>
-  <li><a href="#install-quarto" id="toc-install-quarto" class="nav-link" data-scroll-target="#install-quarto">Install Quarto</a></li>
-  <li><a href="#install-the-financial-reporting-tool-itself" id="toc-install-the-financial-reporting-tool-itself" class="nav-link" data-scroll-target="#install-the-financial-reporting-tool-itself">Install the financial reporting tool itself</a></li>
-  <li><a href="#testing-the-installation" id="toc-testing-the-installation" class="nav-link" data-scroll-target="#testing-the-installation">Testing the installation</a></li>
-  </ul></li>
-  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a></li>
+  <li><a href="#education" id="toc-education" class="nav-link active" data-scroll-target="#education">Education</a></li>
+  <li><a href="#experience" id="toc-experience" class="nav-link" data-scroll-target="#experience">Experience</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-about-broadside column-page">
+  <div class="about-main">
+    <div class="about-entity" style="background-image: url('leonard.png')"></div>
+    <div class="about-contents"><header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Installation guide</h1>
+<h1 class="title">John Leonard</h1>
 </div>
-
-
-
 <div class="quarto-title-meta">
-
-    
-  
-    
   </div>
-  
+</header><main class="content" id="quarto-document-content">
 
-</header>
-
-<p>This guide provides a step-by-step overview of how to install and use the financial report generator developed by the team of students at VCU.</p>
-<p>This report generating tool creates a custom powerpoint slide deck. Employees provide background information about the client and the portfolio size using a web browser. The tool generates a PPTX and returns it through the browser to the employee. The employee can then modify the PPTX and share it with the client and or customer.</p>
-<p>The system consists of two major parts: a <em>back-end</em> that runs on a windows machine connected to the company internal network, and a <em>front-end</em> that runs on a employees browser.</p>
-<section id="pre-installation-requirements" class="level1">
-<h1>Pre-Installation Requirements</h1>
-<p>This program is designed run on a windows machine within a secure, internal company LAN network. In general, this is something with an IP range like 192.168.1.*. One machine on the network will be running the report generating tool. The other machines can access the tool through a browser.</p>
-<ol type="1">
-<li>A Windows machine</li>
-<li>A powershell terminal.</li>
-<li>An internal office computer network</li>
-</ol>
+<p>John Leonard is the Chief Data Scientist at Wengo Analytics. When not innovating on data platforms, Finley enjoys spending time unicycling and playing with her pet iguana.</p>
+<section id="education" class="level2">
+<h2 data-anchor-id="education">Education</h2>
+<p>University of California, San Diego | San Diego, CA PhD in Engineering | June 1991</p>
 </section>
-<section id="software-installation" class="level1">
-<h1>Software installation</h1>
-<p>The following software applications need to be installed. These tools are open-source and available for download from the internet.</p>
-<ol type="a">
-<li>Visual Studio Code (VS Code) - this is a text editor. Other editors (e.g., Notepad) can be used. We used VScode to develop this system.</li>
-<li>pyenv - this tools helps manage python environments and keep the correct version of python on your machine.</li>
-<li>quarto - this is the actual report generating tool. We built the financial reporting system on top of Quarto.</li>
-</ol>
-<section id="install-vs-code" class="level2">
-<h2 class="anchored" data-anchor-id="install-vs-code">Install VS Code</h2>
-<p>Below is a link to visual studio code.</p>
-<p><a href="https://code.visualstudio.com/download" class="uri">https://code.visualstudio.com/download</a></p>
-<p>We recommend using the larger button to download the software, as identified in figure 1.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="assets/2023-05-22_06-49-13.png" class="img-fluid figure-img" style="width:8cm"></p>
-<figcaption class="figure-caption">VSCode installation screen</figcaption>
-</figure>
+<section id="experience" class="level2">
+<h2 data-anchor-id="experience">Experience</h2>
+<p>Virginia Commonwealth University | Professor | 2016 - present</p>
+
+
+</section>
+</main></div>
+  </div>
+  <div class="about-links">
+  <a href="https://twitter.com" class="about-link" rel="" target="">
+    <i class="bi bi-twitter"></i>
+     <span class="about-link-text">twitter</span>
+  </a>
+  <a href="https://github.com" class="about-link" rel="" target="">
+    <i class="bi bi-github"></i>
+     <span class="about-link-text">Github</span>
+  </a>
 </div>
-</section>
-<section id="install-pyenv" class="level2">
-<h2 class="anchored" data-anchor-id="install-pyenv">Install pyenv</h2>
-<p>Pyenv is a python manager. Using pyenv complicates the initial installation of the software tools but in the long run will help improve maintenance.</p>
-<p><a href="https://github.com/pyenv-win/pyenv-win" class="uri">https://github.com/pyenv-win/pyenv-win</a></p>
-<p>See the <a href="https://github.com/pyenv-win/pyenv-win#quick-start">quick start</a> for the gory details. We’re looking to install python 3.11.3.</p>
-</section>
-<section id="install-quarto" class="level2">
-<h2 class="anchored" data-anchor-id="install-quarto">Install Quarto</h2>
-<p>Quarto is a tool for documenting reproducible research and computations. We use Quarto to generate the custom figures and weave them together into a single PPTX. Quarto can be downloaded from here:</p>
-<p><a href="https://quarto.org/docs/get-started/" class="uri">https://quarto.org/docs/get-started/</a></p>
-</section>
-<section id="install-the-financial-reporting-tool-itself" class="level2">
-<h2 class="anchored" data-anchor-id="install-the-financial-reporting-tool-itself">Install the financial reporting tool itself</h2>
-<p>The financial tool is distributed as a python package. To install the tool, use this command from a powershell terminal:</p>
-<pre><code>    pip install https://github.com/ssgvip/software-for-social-good-website/raw/main/components/finreport-0.1.0-py3-none-any.whl</code></pre>
-</section>
-<section id="testing-the-installation" class="level2">
-<h2 class="anchored" data-anchor-id="testing-the-installation">Testing the installation</h2>
-<p><em>Zach - python will install the software in a locked folder. Should Adam/the user need to create a working folder on their machine, and populate this folder with the appropriate PPTX and other files. Is this where the logs will get created?</em></p>
-</section>
-</section>
-<section id="summary" class="level1">
-<h1>Summary</h1>
-<p>This guide provides a step-by-step overview of how to install and use the financial portfolio management software. Please ensure you comply with the security recommendations. For any further questions or concerns, refer to the separate instructions for template creation or reach out to the support team.</p>
-
-
-</section>
-
-</main> <!-- /main -->
+</div>
+ <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -228,13 +174,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
-  const icon = "";
-  const anchorJS = new window.AnchorJS();
-  anchorJS.options = {
-    placement: 'right',
-    icon: icon
-  };
-  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     

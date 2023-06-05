@@ -1,10 +1,31 @@
 [
   {
+    "objectID": "about/about-leonard.html",
+    "href": "about/about-leonard.html",
+    "title": "John Leonard",
+    "section": "",
+    "text": "John Leonard is the Chief Data Scientist at Wengo Analytics. When not innovating on data platforms, Finley enjoys spending time unicycling and playing with her pet iguana."
+  },
+  {
+    "objectID": "about/about-leonard.html#education",
+    "href": "about/about-leonard.html#education",
+    "title": "John Leonard",
+    "section": "Education",
+    "text": "Education\nUniversity of California, San Diego | San Diego, CA PhD in Engineering | June 1991"
+  },
+  {
+    "objectID": "about/about-leonard.html#experience",
+    "href": "about/about-leonard.html#experience",
+    "title": "John Leonard",
+    "section": "Experience",
+    "text": "Experience\nVirginia Commonwealth University | Professor | 2016 - present"
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "about page",
     "section": "",
-    "text": "this is an about page"
+    "text": "John Leonard"
   },
   {
     "objectID": "index.html",

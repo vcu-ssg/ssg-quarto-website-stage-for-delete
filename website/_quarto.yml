@@ -10,15 +10,16 @@ website:
   search:
     location: navbar
     type: overlay
+  sidebar: false
   navbar:
     background: primary
-    search: true
+    search: false
     right: #changed nav menu items to align to the right
       - text: "Home"
         file: index.qmd
       - text: "About Team"
         file: about.qmd
-    logo: assets/CS-icon-01.png #vcu computer science emblem 
+    logo: assets/ssglogo.svg #vcu computer science emblem 
     logo-href: /index.html
 
 format:

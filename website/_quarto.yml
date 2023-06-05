@@ -2,8 +2,8 @@ project:
   type: website
   output-dir: ..\docs
 
-about:
-  template: broadside
+#about:
+#  template: broadside
 
 website:
   title: "SSG VIP Internal Site"
@@ -17,8 +17,6 @@ website:
     right: #changed nav menu items to align to the right
       - text: "Home"
         file: index.qmd
-      - text: "About Team"
-        file: about.qmd
     logo: assets/ssglogo.svg #vcu computer science emblem 
     logo-href: /index.html
 

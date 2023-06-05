@@ -1,5 +1,7 @@
 ---
-title: about page
+title: about SSG
 ---
 
-this is an about page
+Meet our team!
+
+

@@ -13,7 +13,7 @@ $mid-gray: #75776d !default;
 $darker-gray: #687178 !default;
 
 // Navbar
-$navbar-bg: $cs-green !default;
+$navbar-bg: $darker-gray !default;
 $navbar-brand-font-size: 1.5rem !default;
 $navbar-brand-padding-y: 0.8rem !default;
 
@@ -26,3 +26,7 @@ $navbar-brand-padding-y: 0.8rem !default;
 .navbar-brand {
   font-weight: bold;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600&display=swap');
+
+// Pulled from SSGVIP globals.css file on old web site

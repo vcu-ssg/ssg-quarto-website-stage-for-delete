@@ -6,7 +6,7 @@ about:
   template: broadside
 
 website:
-  title: "SSG VIP Overlay Study"
+  title: "SSG VIP Internal Site"
   search:
     location: navbar
     type: overlay
@@ -16,10 +16,6 @@ website:
     right: #changed nav menu items to align to the right
       - text: "Home"
         file: index.qmd
-      - text: "Installation"
-        file: installation.qmd
-      - text: "Users Guide"
-        file: usersguide.qmd
       - text: "About Team"
         file: about.qmd
     logo: assets/CS-icon-01.png #vcu computer science emblem 
@@ -27,7 +23,7 @@ website:
 
 format:
   html:
-    theme: assets/quarto_vcutheme.scss
+    theme: assets/quarto_ssgvip.scss
     mainfont: 'Roboto' #vcu's body text font.
     toc: true
     html-math-method: katex

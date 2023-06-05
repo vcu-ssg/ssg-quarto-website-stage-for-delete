@@ -1,5 +1,5 @@
 ---
-title: about page
+title: about SSG
 ---
 
 [John Leonard](about/about-leonard.qmd)

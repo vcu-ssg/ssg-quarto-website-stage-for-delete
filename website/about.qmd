@@ -2,6 +2,5 @@
 title: about SSG
 ---
 
-Meet our team!
-
+[John Leonard](about/about-leonard.qmd)
 

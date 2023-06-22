@@ -2,14 +2,18 @@ project:
   type: website
   output-dir: ..\docs
 
+#about:
+#  template: broadside
+
 website:
   title: "SSG VIP Internal Site"
   search:
     location: navbar
     type: overlay
+  sidebar: false
   navbar:
     background: primary
-    search: true
+    search: false
     right: #changed nav menu items to align to the right
       - text: "Home"
         file: index.qmd

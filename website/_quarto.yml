@@ -1,29 +1,49 @@
 project:
   type: website
-  output-dir: ..\docs
+  output-dir: docs
 
 #about:
 #  template: broadside
 
 website:
-  title: "SSG VIP Internal Site"
+  title: "SSG VIP at VCU"
   search:
     location: navbar
     type: overlay
   sidebar: false
   navbar:
     background: primary
+    logo: assets/ssg_logo_white_l2.svg #vcu computer science emblem 
+    logo-href: /index.html
+    title: false
     search: false
     right: #changed nav menu items to align to the right
       - text: "Home"
         file: index.qmd
-    logo: assets/ssglogo.svg #vcu computer science emblem 
-    logo-href: /index.html
+      - text: "Our Team"
+        file: about.qmd
+      - text: "Projects"
+        file: about.qmd
+      - text: "For Students"
+        file: about.qmd
+      - text: "Contact"
+        file: about.qmd
+    tools: 
+      - icon: github
+        href: https://github.com/quarto-dev/quarto-cli
+        text: SSG GitHub
+      - icon: discord
+        href: https://github.com/quarto-dev/quarto-cli
+        text: SSG Discord
 
 format:
   html:
     theme: assets/quarto_ssgvip.scss
-    mainfont: 'Roboto' #vcu's body text font.
-    toc: true
+    toc: false
+    css: style.css
     html-math-method: katex
-
+    mainfont: 'Be Vietnam Pro'
+    grid:
+      sidebar-width: 250px
+      body-width: 900px
+      margin-width: 300px

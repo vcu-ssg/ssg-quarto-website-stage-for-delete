@@ -1,0 +1,17 @@
+$white: #f4f4f4 !default;
+$black: #212121 !default;
+$brass: #C5947C !default;
+
+.nav-link {
+  color: red !important;
+  opacity: .7 !important;
+  border-radius:8px;
+  padding: 4px 16px;
+}
+.nav-link:hover {
+  background-color: rgba(255,255,255,0.1);
+}
+
+.nav-link.active {
+  opacity:1;
+}

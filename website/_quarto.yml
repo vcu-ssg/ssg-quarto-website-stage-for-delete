@@ -30,10 +30,10 @@ website:
         file: about.qmd
     tools: 
       - icon: github
-        href: https://github.com/quarto-dev/quarto-cli
+        href: https://github.com/vcu-ssg
         text: SSG GitHub
       - icon: discord
-        href: https://github.com/quarto-dev/quarto-cli
+        href: https://discord.gg/xv29j9fVRd
         text: SSG Discord
 
 format:
@@ -41,6 +41,7 @@ format:
     theme: assets/quarto_ssgvip.scss
     toc: false
     css: style.css
+    include-after-body: js.html
     html-math-method: katex
     mainfont: 'Be Vietnam Pro'
     grid:

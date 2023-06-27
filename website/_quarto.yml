@@ -1,12 +1,12 @@
 project:
   type: website
-  output-dir: docs
+  output-dir: ../docs
 
 #about:
 #  template: broadside
 
 website:
-  title: "SSG VIP at VCU"
+  title: "SSG at VCU"
   search:
     location: navbar
     type: overlay

@@ -7,6 +7,7 @@ project:
 
 website:
   title: "SSG at VCU"
+  favicon: "assets/ssg_favicon.ico"
   search:
     location: navbar
     type: overlay

@@ -33,7 +33,8 @@ header {
   transition: transform 100ms linear !important; //navbar collapse 
 
   .navbar {
-    padding: 0;
+    padding-top: 0;
+    padding-bottom: 0;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
     background: url(./assets/ssg_pattern.svg) repeat-x;
     background-color: $black;
@@ -130,6 +131,7 @@ header {
         display: flex;
         align-items: center;
         -webkit-align-items: center;
+        background-color: red;
 
         .aa-SubmitIcon:hover {
           color: $white !important;

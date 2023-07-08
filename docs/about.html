@@ -153,6 +153,8 @@ ul.task-list li input[type="checkbox"] {
   const currentYear = new Date().getFullYear();
 
   document.body.insertAdjacentHTML('beforeend', `
+
+
   <footer class="custom-footer">
     <div class="footer-container">
       <div class="footer-top">
@@ -193,7 +195,34 @@ ul.task-list li input[type="checkbox"] {
       <p class="copyright">© Software for Social Good at Virginia Commonwealth University ${currentYear}</p>
     </div>
   </footer>
+
+  <div id="backtop">
+    <div class="scroll-top">
+      <i class="bi bi-caret-up-fill"></i>
+      <p>top</p>
+    </div>
+  </div>
   `);
+
+
+  let backtopElement = document.getElementById("backtop");
+
+  window.addEventListener("scroll", function () {
+    if (window.pageYOffset > window.innerHeight/4) {
+      backtopElement.style.opacity = 1;
+      backtopElement.style.pointerEvents = "auto";
+    } else {
+      backtopElement.style.opacity = 0;
+      backtopElement.style.pointerEvents = "none";
+    }
+  });
+
+  backtopElement.addEventListener("click", function () {
+    window.scrollTo({
+      top: document.body.offsetTop,
+      behavior: "smooth",
+    });
+  });
 </script>
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {

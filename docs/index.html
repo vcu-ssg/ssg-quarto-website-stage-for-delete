@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>SSG at VCU - Software for Social Good</title>
+<title>SSG at VCU | Home</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -63,6 +63,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="index.css">
 </head>
 
 <body class="nav-fixed fullcontent">
@@ -119,29 +120,22 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Software for Social Good</h1>
+
+
+<div class="hero-banner">
+<div class="content-block">
+<section id="hello-world-were-software-for-social-good" class="level1 hero-text">
+<h1>Hello World! <br> We’re Software for Social Good</h1>
+<p>Here at VCU, students from multi-disciplinary backgrounds connect with outer communities through projects that create social benefit.</p>
+<div class="hero-buttons">
+<p><a href="" class="btn btn-primary btn-lg" role="button">Learn more about us</a></p>
 </div>
-
-
-
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-</header>
-
-<p><img src="assets/VIPPoster.jpg" class="img-fluid"></p>
-<p>Software for Social Good (SSG) is a multi unit VIP offering students from a variety of majors practical experience with problem discovery and solution ideation. The primary goal of the SSG VIP is to research, prototype, and deliver product-oriented data analytics solutions tailored to unique client needs.</p>
-<p>Research within the SSG VIP addresses questions surrounding the interplay of internal and external customer experience, content intelligence, journey optimization, big data analytics, and data governance. How do users interact with the software and the device? What and how does the software collect information about the user? How can the software adjust dynamically to individual user needs? How can the company optimize delivery of their services to maximize impact on the customer? How and what should be stored about the customers? What are appropriate balances between a desire to know as much as possible about the customer, while protecting the privacy of individuals?</p>
-<p>The SSG VIP creates opportunities for student teams to experience one of the most sought after skills - multidisciplinary team projects - in the context of solving complex problems for firms, governments, and nonprofit organizations. Involvement with this VIP will help students explore both the application of their coursework and the many practical contexts in which their work takes place.</p>
-<p>Our first project, the Future of the Digital ID cosponsored with Bank of America, allowed engineering and design students to collaborate on a mobile-first software development project. Design students used software tools to create mockups and conducted user interviews to refine these mockups, and computer science students implemented these mockups on android and iOS mobile platforms.</p>
-<p>Upcoming projects are planned to bring in expertise from social work, policy, and related fields, creating a fertile ground for dynamic cross functional learning and turnkey early stage solution discovery for clients.</p>
+</section>
+<div class="hero-image-wrap">
+<p><img src="assets/hero-image.png" class="hero-image img-fluid"></p>
+</div>
+</div>
+</div>
 
 
 
@@ -158,6 +152,8 @@ ul.task-list li input[type="checkbox"] {
   const currentYear = new Date().getFullYear();
 
   document.body.insertAdjacentHTML('beforeend', `
+
+
   <footer class="custom-footer">
     <div class="footer-container">
       <div class="footer-top">
@@ -198,7 +194,34 @@ ul.task-list li input[type="checkbox"] {
       <p class="copyright">© Software for Social Good at Virginia Commonwealth University ${currentYear}</p>
     </div>
   </footer>
+
+  <div id="backtop">
+    <div class="scroll-top">
+      <i class="bi bi-caret-up-fill"></i>
+      <p>top</p>
+    </div>
+  </div>
   `);
+
+
+  let backtopElement = document.getElementById("backtop");
+
+  window.addEventListener("scroll", function () {
+    if (window.pageYOffset > window.innerHeight/4) {
+      backtopElement.style.opacity = 1;
+      backtopElement.style.pointerEvents = "auto";
+    } else {
+      backtopElement.style.opacity = 0;
+      backtopElement.style.pointerEvents = "none";
+    }
+  });
+
+  backtopElement.addEventListener("click", function () {
+    window.scrollTo({
+      top: document.body.offsetTop,
+      behavior: "smooth",
+    });
+  });
 </script>
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {

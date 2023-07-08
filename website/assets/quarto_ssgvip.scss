@@ -1,7 +1,17 @@
 /*-- scss:defaults --*/
+
+// Type system
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
 
 $font-size-root: 16px;
+$font-size-base: 1rem !default;
+
+$h1-font-size: $font-size-base*2.5 !default;
+$h2-font-size: $font-size-base*2 !default;
+$h3-font-size: $font-size-base*1.75 !default;
+$h4-font-size: $font-size-base*1.5 !default;
+$h5-font-size: $font-size-base*1.25 !default;
+$h6-font-size: $font-size-base !default;
 
 // Color system
 $white: #f4f4f4 !default;
@@ -10,9 +20,12 @@ $gray: #3E3E3E !default;
 $medium-gray: #898989 !default;
 $light-gray: #E4E4E4 !default;
 $brass: #C5947C !default;
+$light-brass: #ffeee6 !default;
 
 // Bootstrap color system
-$primary: $white !default;
+$btn-primary-color: $white;
+
+$primary: $brass !default;
 $secondary: $brass !default;
 $success: $brass !default;
 $info: $brass !default;
@@ -26,6 +39,24 @@ $navbar-bg: $black !default;
 $navbar-brand-padding-y: 1rem !default;
 
 /*-- scss:rules --*/
+
+.btn {
+  border-radius: 100px;
+  padding: 10px 30px;
+}
+
+.btn-primary {
+  color: $white;
+
+  &:hover {
+    color: $white;
+  }
+}
+
+
+a {
+  color: $brass;
+}
 
 // Header
 
@@ -71,6 +102,11 @@ header {
 
             .bi {
               font-size: 1.5rem;
+              transition: color .1s;
+
+              &:hover {
+                color: $light-brass;
+              }
             }
           }
         }
@@ -113,13 +149,13 @@ header {
               &:hover {
                 background-color: rgba(255, 255, 255, 0.1);
                 opacity: 1;
-                color: $white !important;
+                color: $light-brass !important;
               }
 
               &.active {
                 background-color: rgba(255, 255, 255, 0.1);
                 opacity: 1;
-                color: $white !important;
+                color: $light-brass !important;
               }
             }
           }
@@ -132,10 +168,10 @@ header {
         align-items: center;
         -webkit-align-items: center;
         justify-content: center;
-        margin-right:16px;
+        margin-right: 16px;
 
         .aa-SubmitIcon:hover {
-          color: $white !important;
+          color: $light-brass !important;
           transition: color 100ms linear;
         }
       }
@@ -278,7 +314,75 @@ footer.custom-footer {
   }
 }
 
+// Scroll Top
+
+.scroll-top {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+// hero banner section
+
+.hero-banner {
+  height: 65vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .content-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .hero-text {
+      display: flex;
+      flex-direction: column;
+      gap:16px;
+      width: 420px;
+
+      h1, p {
+        margin: 0;
+      }
+
+      .btn {
+        margin: 32px 0 0 -3px;
+      }
+    }
+
+    .hero-image-wrap {
+      margin-top: 40px;
+      width: 420px;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 @media all and (min-width: 992px) {
+
+  //header
+
   header {
     .navbar {
       .navbar-container {
@@ -323,6 +427,49 @@ footer.custom-footer {
             }
           }
         }
+      }
+    }
+  }
+
+  // Scroll Top
+
+  #backtop {
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    width: 56px;
+    height: 56px;
+    cursor: pointer;
+    transition: opacity .1s;
+
+    .scroll-top {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 100%;
+      width: 56px;
+      height: 56px;
+      background-color: #3E3E3E;
+      gap: 2px;
+      opacity: .5;
+      transition: opacity .1s;
+
+      &:hover {
+        opacity: 1;
+      }
+
+      .bi-caret-up-fill {
+        margin-top: 14px;
+        color: $white;
+        display: flex;
+        align-items: center;
+        height: 8px;
+      }
+
+      p {
+        font-family: "be vietnam pro";
+        color: #f4f4f4;
+        font-size: 14px;
       }
     }
   }

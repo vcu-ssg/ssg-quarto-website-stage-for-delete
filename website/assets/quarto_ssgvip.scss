@@ -43,6 +43,7 @@ $navbar-brand-padding-y: 1rem !default;
 .btn {
   border-radius: 100px;
   padding: 10px 30px;
+  min-width: 200px;
 }
 
 .btn-primary {
@@ -196,6 +197,7 @@ footer.custom-footer {
   a {
     text-decoration: none;
     margin-bottom: 2px;
+    color: $medium-gray;
 
     &:hover p {
       color: $white;
@@ -244,6 +246,17 @@ footer.custom-footer {
 
           img.ssg-logo {
             width: 100%;
+          }
+        }
+
+        &:first-of-type {
+          a {
+            text-decoration: underline;
+
+            &:hover {
+              color: $white;
+              transition: color .3s;
+            }
           }
         }
 
@@ -338,7 +351,7 @@ footer.custom-footer {
   height: 65vh;
   display: flex;
   justify-content: center;
-  align-items: center;
+  margin-bottom: 100px;
 
   .content-block {
     display: flex;
@@ -346,13 +359,15 @@ footer.custom-footer {
     align-items: center;
     flex-wrap: wrap;
 
+
     .hero-text {
       display: flex;
       flex-direction: column;
-      gap:16px;
+      gap: 16px;
       width: 420px;
 
-      h1, p {
+      h1,
+      p {
         margin: 0;
       }
 
@@ -370,7 +385,76 @@ footer.custom-footer {
 
 
 
+// our pillars section
 
+.our-pillars {
+  // display: flex;
+  width: 100%;
+  justify-content: space-between;
+
+  .content-block {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    h1 {
+      text-align: center;
+      margin:0;
+    }
+
+    .our-pillars-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-self: center;
+      gap:24px;
+
+      p {
+        max-width: 500px;
+        text-align: center;
+      }
+    }
+
+    .pillars-card-wrap {
+      margin-top: 24px;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+
+      .pillars-card {
+        display: flex;
+        padding: 24px 24px 40px;
+        flex-direction: column;
+        gap: 32px;
+        box-shadow: 0 0 12px 0 $black;
+        box-sizing: content-box;
+        width: 210px;
+
+        .pillars-image-wrap {
+          max-width: 200px;
+          height: 150px; //temporary property
+          opacity: .2; //temporary property
+          border: 1px solid;
+        }
+
+        h3 {
+          padding-left: 16px;
+          margin: 0;
+          border-left: 4px solid $brass;
+
+          .anchorjs-link {
+            display: none;
+          }
+        }
+
+        p {
+          margin: 0;
+        }
+
+      }
+    }
+  }
+}
 
 
 

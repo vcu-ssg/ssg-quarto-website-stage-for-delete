@@ -3,6 +3,8 @@ pagetitle: SSG at VCU | Home
 css: index.css
 ---
 
+<!--- hero banner section --->
+
 ::: {.hero-banner} 
 
 ::: {.content-block}  
@@ -25,3 +27,61 @@ Here at VCU, students from multi-disciplinary backgrounds connect with outer com
 
 :::
 
+
+<!--- our pillars section --->
+
+::: {.our-pillars}
+
+::: {.content-block}
+
+# Our Pillars
+
+::: our-pillars-text
+Experiment, learn, design and develop - We provide a sandbox for students to uncover their true potential.
+
+[Join Us](){.btn .btn-primary .btn-lg role="button"}
+:::
+
+::: {.pillars-card-wrap}
+
+::: {.pillars-card}
+
+::: {.pillars-image-wrap}
+![](assets/ssg_logo_black_l2.svg){.hero-image}
+:::
+
+<h3>Hands-on Experience</h3>
+
+Provide students with opportunities to work on real-world software challenges. 
+
+::: 
+
+::: {.pillars-card}
+
+::: {.pillars-image-wrap}
+![](assets/ssg_logo_black_l2.svg){.hero-image}
+:::
+
+<h3>Innovative Solutions</h3>
+
+Build innovative and creative softwares with a socially beneficial bottom line.
+
+::: 
+
+::: {.pillars-card}
+
+::: {.pillars-image-wrap}
+![](assets/ssg_logo_black_l2.svg){.hero-image}
+:::
+
+<h3>Talent Development</h3>
+
+Discover emerging skills in the software design and development by working with us.
+
+:::
+
+:::
+
+:::
+
+::: 

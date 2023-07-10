@@ -7,5 +7,35 @@
   },
   "index.qmd": {
     "index.html": "7ca9109a"
+  },
+  "pages/projects/posts/2022-06-21-rstudio-conf-2022-quarto/index.qmd": {
+    "index.html": "b0dcc724"
+  },
+  "pages/projects/posts/2023-04-26-1.3-release/index.qmd": {
+    "index.html": "78705634"
+  },
+  "pages/projects/posts/2022-10-25-shinylive-extension/index.qmd": {
+    "index.html": "c351429a"
+  },
+  "pages/projects/posts/2022-07-25-feature-extensions/index.qmd": {
+    "index.html": "37b396c6"
+  },
+  "pages/projects/posts/2022-02-13-feature-callouts/index.qmd": {
+    "index.html": "b9dcf409"
+  },
+  "pages/projects/posts/2022-02-15-feature-tables/index.qmd": {
+    "index.html": "9539d2d9"
+  },
+  "pages/projects/posts/2023-03-20-confluence/index.qmd": {
+    "index.html": "ec19db73"
+  },
+  "pages/projects/posts/2023-05-22-quarto-for-academics/index.qmd": {
+    "index.html": "1313498d"
+  },
+  "pages/projects/index.qmd": {
+    "index.html": "2d0a529a"
+  },
+  "pages/students/index.qmd": {
+    "index.html": "f8938292"
   }
 }

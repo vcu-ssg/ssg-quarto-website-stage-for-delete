@@ -32,7 +32,7 @@
     "href": "index.html",
     "title": "Hello World!  We’re Software for Social Good",
     "section": "",
-    "text": "Hello World!  We’re Software for Social Good\nHere at VCU, students from multi-disciplinary backgrounds connect with outer communities through projects that create social benefit.\n\nLearn more about us\n\n\n\n\n\n\n\n\n\n\nOur Pillars\n\nExperiment, learn, design and develop - We provide a sandbox for students to uncover their true potential.\nJoin Us\n\n\n\n\n\n\n\nHands-on Experience\n\nProvide students with opportunities to work on real-world software challenges.\n\n\n\n\n\n\nInnovative Solutions\n\nBuild innovative and creative softwares with a socially beneficial bottom line.\n\n\n\n\n\n\nTalent Development\n\nDiscover emerging skills in the software design and development by working with us."
+    "text": "placeholder image\n\n\n\n\nHello World!  We’re Software for Social Good\nHere at VCU, students from multi-disciplinary backgrounds connect with outer communities through projects that create social benefit.\n\nLearn more about us\n\n\n\n\n\n\n\nOur Pillars\n\nExperiment, learn, design and develop - We provide a sandbox for students to uncover their true potential.\nJoin our team\n\n\n\n\n\n\n\nplaceholder image\n\n\n\n\nHands-on Experience\n\nProvide students with opportunities to work on real-world software challenges.\n\n\n\n\n\n\nplaceholder image\n\n\n\n\nInnovative Solutions\n\nBuild innovative and creative softwares with a socially beneficial bottom line.\n\n\n\n\n\n\nplaceholder image\n\n\n\n\nTalent Development\n\nDiscover emerging skills in the software design and development by working with us."
   },
   {
     "objectID": "index.html#helo-world",
@@ -40,5 +40,19 @@
     "title": "Hello World!  We’re Software for Social Good",
     "section": "Helo World",
     "text": "Helo World\n\nHello World"
+  },
+  {
+    "objectID": "pages/projects/posts/2023-03-20-confluence/index.html",
+    "href": "pages/projects/posts/2023-03-20-confluence/index.html",
+    "title": "Confluence Publishing",
+    "section": "",
+    "text": "Quarto 1.3 Feature\n\n\n\nThis post is part of a series highlighting new features in the 1.3 release of Quarto. Get the latest release at https://quarto.org/docs/download.\n\n\nAtlassian Confluence is a publishing platform for supporting team collaboration. Confluence has a variety of hosting options which include both free and paid subscription plans.\nQuarto 1.3 adds support for publishing individual documents, as well as projects composed of multiple documents into Confluence Spaces.\n\n\n\n\n\n\nA Quarto Document\n\n\n\n\n\n\n\nPublished to Confluence\n\n\n\n\n\n\n\n\n\n\n\nA Quarto Project\n\n\n\n\n\n\n\nPublished to Confluence\n\n\n\n\n\nManaging Confluence content with Quarto allows you to author content in Markdown, manage that content with your usual version control tools like Git and GitHub, and leverage Quarto’s tools for including computational output.\n\nIf you’re curious about using Confluence Publishing for your own project, head to the Confluence Publishing page of the pre-release highlights to learn more."
+  },
+  {
+    "objectID": "pages/projects/posts/2023-05-22-quarto-for-academics/index.html",
+    "href": "pages/projects/posts/2023-05-22-quarto-for-academics/index.html",
+    "title": "Quarto for Academics",
+    "section": "",
+    "text": "Quarto offers a myriad of features that are especially useful for academics, as educators and as researchers. These range from chunk options that enable automatic linking of code to documentation, to article templates for manuscript submission to multiple journals. The following video walks you through some of these features.\n\nSelect highlights include:\n\nLinking to documentation from code with code-link.\nInformative YAML errors and YAML completion.\nCreating Quarto slides with revealjs.\nPDF export of HTML slides.\nAnnotating slides with chalkboard.\nAdvancing slides for your audience with multiplex.\nHighlighting code with code-line-numbers.\nCustomizing output location with output-location.\nShowing code chunk fences with echo: fenced.\nCode annotation.\nAuthoring manuscripts with Quarto journal templates.\nInserting citations from Zotero or from a DOI with the RStudio Visual Editor.\n\nIf you would like to follow along as you watch, you can find the source code for everything created in the video in this GitHub repository."
   }
 ]

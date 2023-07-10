@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="J.J. Allaire">
+<meta name="dcterms.date" content="2022-07-25">
+<meta name="description" content="Quarto Extensions are a powerful way to modify or extend the behavior of Quarto, and can be created and distributed by anyone. Extension types include filters, shortcodes, and custom formats.">
 
-<title>SSG at VCU - about SSG</title>
+<title>SSG at VCU - Quarto Extensions</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,23 +26,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./assets/ssg_favicon.ico" rel="icon">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../../">
+<link href="../../../../assets/ssg_favicon.ico" rel="icon">
+<script src="../../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -62,7 +65,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="../../../../style.css">
 </head>
 
 <body class="nav-fixed fullcontent">
@@ -72,8 +75,8 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./assets/ssg_logo_white_l2.svg" alt="" class="navbar-logo">
+    <a href="../../../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../../../assets/ssg_logo_white_l2.svg" alt="" class="navbar-logo">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -83,23 +86,23 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html" rel="" target="">
+    <a class="nav-link" href="../../../../index.html" rel="" target="">
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./about.html" rel="" target="" aria-current="page">
+    <a class="nav-link" href="../../../../about.html" rel="" target="">
  <span class="menu-text">Our Team</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./pages/projects/index.html" rel="" target="">
+    <a class="nav-link" href="../../../../pages/projects/index.html" rel="" target="">
  <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html" rel="" target="">
+    <a class="nav-link" href="../../../../about.html" rel="" target="">
  <span class="menu-text">For Students</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html" rel="" target="">
+    <a class="nav-link" href="../../../../about.html" rel="" target="">
  <span class="menu-text">Contact</span></a>
   </li>  
 </ul>
@@ -121,14 +124,36 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">about SSG</h1>
-</div>
+<h1 class="title">Quarto Extensions</h1>
+<p class="subtitle lead">Extend Quarto with new capabilities</p>
+  <div class="quarto-categories">
+    <div class="quarto-category">Extensions</div>
+    <div class="quarto-category">Features</div>
+  </div>
+  </div>
 
+<div>
+  <div class="description">
+    <p>Quarto Extensions are a powerful way to modify or extend the behavior of Quarto, and can be created and distributed by anyone. Extension types include filters, shortcodes, and custom formats.</p>
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>J.J. Allaire </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">July 25, 2022</p>
+    </div>
+  </div>
   
     
   </div>
@@ -136,7 +161,44 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p><a href="./about/about-leonard.html">John Leonard</a></p>
+<p>Quarto Extensions are a powerful way to modify or extend the behavior of Quarto, and can be created and distributed by anyone. There are three types of extensions available:</p>
+<ul>
+<li><p><a href="../../../extensions/shortcodes.qmd">Shortcodes</a> are special markdown directives that generate various types of content. For example, you could create shortcodes to embed tweets or videos in a document.</p></li>
+<li><p><a href="../../../extensions/filters.qmd">Filters</a> are a flexible and powerful tool for introducing new global behaviors and/or new markdown rendering behaviors. For example, you could create filters to implement output folding, an image carousel, or just about anything you can imagine!</p></li>
+<li><p><a href="../../../extensions/formats.qmd">Formats</a> enable you to create new output formats by bundling together document options, templates, stylesheets, and other content.</p></li>
+</ul>
+<p>Here are some examples of extensions developed and maintained by the core Quarto team:</p>
+<table class="table">
+<colgroup>
+<col style="width: 30%">
+<col style="width: 70%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Extension</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://github.com/quarto-ext/lightbox/">lightbox</a></td>
+<td>Create lightbox treatments for images in your HTML documents.</td>
+</tr>
+<tr class="even">
+<td><a href="https://github.com/quarto-ext/fancy-text">fancy-text</a></td>
+<td>Output nicely formatted versions of fancy strings such as LaTeX and BibTeX in multiple formats.</td>
+</tr>
+<tr class="odd">
+<td><a href="https://github.com/quarto-ext/fontawesome">fontawesome</a></td>
+<td>Use Font Awesome icons in HTML and PDF documents.</td>
+</tr>
+<tr class="even">
+<td><a href="https://github.com/quarto-ext/latex-environment">latex-environment</a></td>
+<td>Quarto extension to output custom LaTeX environments.</td>
+</tr>
+</tbody>
+</table>
+<p>To learn more about using extensions, see the <a href="../../../extensions/index.qmd">Extensions</a> documentation on the Quarto website. If you want to dive in to creating your own extensions check out the articles on <a href="../../../extensions/shortcodes.qmd">Creating Shortcodes</a>, <a href="../../../extensions/filters.qmd">Creating Filters</a>, and <a href="../../../extensions/formats.qmd">Creating Formats</a>.</p>
 
 
 

@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Charlotte Wickham">
+<meta name="dcterms.date" content="2023-03-20">
+<meta name="description" content="Quarto 1.3 adds support for publishing individual documents, and projects containing many documents to Atlassian Confluence.">
 
-<title>SSG at VCU - about SSG</title>
+<title>SSG at VCU - Confluence Publishing</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,23 +26,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./assets/ssg_favicon.ico" rel="icon">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../../">
+<link href="../../../../assets/ssg_favicon.ico" rel="icon">
+<script src="../../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -62,7 +65,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="../../../../style.css">
 </head>
 
 <body class="nav-fixed fullcontent">
@@ -72,8 +75,8 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./assets/ssg_logo_white_l2.svg" alt="" class="navbar-logo">
+    <a href="../../../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../../../assets/ssg_logo_white_l2.svg" alt="" class="navbar-logo">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -83,23 +86,23 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html" rel="" target="">
+    <a class="nav-link" href="../../../../index.html" rel="" target="">
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./about.html" rel="" target="" aria-current="page">
+    <a class="nav-link" href="../../../../about.html" rel="" target="">
  <span class="menu-text">Our Team</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./pages/projects/index.html" rel="" target="">
+    <a class="nav-link" href="../../../../pages/projects/index.html" rel="" target="">
  <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html" rel="" target="">
+    <a class="nav-link" href="../../../../about.html" rel="" target="">
  <span class="menu-text">For Students</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html" rel="" target="">
+    <a class="nav-link" href="../../../../about.html" rel="" target="">
  <span class="menu-text">Contact</span></a>
   </li>  
 </ul>
@@ -121,14 +124,37 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">about SSG</h1>
-</div>
+<h1 class="title">Confluence Publishing</h1>
+<p class="subtitle lead">Publish from Quarto to Confluence</p>
+  <div class="quarto-categories">
+    <div class="quarto-category">Features</div>
+    <div class="quarto-category">Authoring</div>
+    <div class="quarto-category">Quarto 1.3</div>
+  </div>
+  </div>
 
+<div>
+  <div class="description">
+    <p>Quarto 1.3 adds support for publishing individual documents, and projects containing many documents to Atlassian Confluence.</p>
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Charlotte Wickham </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">March 20, 2023</p>
+    </div>
+  </div>
   
     
   </div>
@@ -136,7 +162,64 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p><a href="./about/about-leonard.html">John Leonard</a></p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Quarto 1.3 Feature
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This post is part of a series highlighting new features in the 1.3 release of Quarto. Get the latest release at <a href="https://quarto.org/docs/download" class="uri">https://quarto.org/docs/download</a>.</p>
+</div>
+</div>
+<p><a href="https://www.atlassian.com/software/confluence">Atlassian Confluence</a> is a publishing platform for supporting team collaboration. Confluence has a variety of hosting options which include both free and paid subscription plans.</p>
+<p>Quarto 1.3 adds support for publishing individual documents, as well as projects composed of multiple documents into <a href="https://support.atlassian.com/confluence-cloud/docs/use-spaces-to-organize-your-work/">Confluence Spaces</a>.</p>
+<div class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/confluence-qmd.png" class="img-fluid figure-img" alt="A screenshot of a Quarto document with the title Using R - Doc in the RStudio Editor."></p>
+<figcaption class="figure-caption">A Quarto Document</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/confluence-page.png" class="img-fluid figure-img" alt="A screenshot of a document with the title Using R - Doc in a Confluence Space."></p>
+<figcaption class="figure-caption">Published to Confluence</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 45.2%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/confluence-project.png" class="img-fluid figure-img" alt="A screenshot of a Quarto project in VS Code. On the left in the Explorer, the project folder is called 'Guide-site', and contains folders 'authoring', and 'computation', along with some other files. A document from the folder 'python' inside the folder 'computations' with the title 'Using Python - site' is open in the Source Pane. "></p>
+<figcaption class="figure-caption">A Quarto Project</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 54.8%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/confluence-site.png" class="img-fluid figure-img" alt="A screenshot of Space in Confluence. On the left in the Sdiebar under Pages is a page called 'Guide-site'. Nested under this page are pages called 'authoring', and 'computation', along with some other pages. The 'computation' page item is expanded and shows a page called 'Using Python - site', nested under a page called 'python'. A page is displayed on the right with the title 'Using Python - site'"></p>
+<figcaption class="figure-caption">Published to Confluence</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<p>Managing Confluence content with Quarto allows you to author content in Markdown, manage that content with your usual version control tools like Git and GitHub, and leverage Quarto’s tools for including computational output.</p>
+<!-- Quick overview of key features: new format and project type, local preview, `quarto publish confluence`. -->
+<p>If you’re curious about using Confluence Publishing for your own project, head to the <a href="../../../../docs/prerelease/1.3/confluence.html">Confluence Publishing page</a> of the pre-release highlights to learn more.</p>
 
 
 

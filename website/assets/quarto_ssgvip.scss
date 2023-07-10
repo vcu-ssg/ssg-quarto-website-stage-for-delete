@@ -348,13 +348,14 @@ footer.custom-footer {
 // hero banner section
 
 .hero-banner {
-  height: 65vh;
+  min-height: 75vh;
   display: flex;
   justify-content: center;
   margin-bottom: 100px;
 
   .content-block {
     display: flex;
+    flex-flow: row-reverse;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -364,7 +365,7 @@ footer.custom-footer {
       display: flex;
       flex-direction: column;
       gap: 16px;
-      width: 420px;
+      max-width: 800px;
 
       h1,
       p {
@@ -388,9 +389,9 @@ footer.custom-footer {
 // our pillars section
 
 .our-pillars {
-  // display: flex;
   width: 100%;
   justify-content: space-between;
+  margin-bottom: 100px;
 
   .content-block {
     display: flex;
@@ -399,7 +400,28 @@ footer.custom-footer {
 
     h1 {
       text-align: center;
-      margin:0;
+      margin: 0 0 32px 0;
+      position: relative;
+
+      &::before, &::after {
+        display: block;
+        content:"";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: $light-gray;
+        top:45%;
+      }
+
+      &::before {
+        left:-50%;
+        transform: translateX(-120px);
+      }
+
+      &::after {
+        left:50%;
+        transform: translateX(120px);
+      }
     }
 
     .our-pillars-text {
@@ -407,7 +429,7 @@ footer.custom-footer {
       flex-direction: column;
       justify-content: center;
       align-self: center;
-      gap:24px;
+      gap: 24px;
 
       p {
         max-width: 500px;
@@ -419,28 +441,29 @@ footer.custom-footer {
       margin-top: 24px;
       display: flex;
       justify-content: space-between;
+      gap: 40px;
       width: 100%;
 
       .pillars-card {
         display: flex;
-        padding: 24px 24px 40px;
         flex-direction: column;
         gap: 32px;
-        box-shadow: 0 0 12px 0 $black;
         box-sizing: content-box;
-        width: 210px;
+        width: 200px;
 
         .pillars-image-wrap {
-          max-width: 200px;
           height: 150px; //temporary property
           opacity: .2; //temporary property
           border: 1px solid;
+          width: 100%;
+          background-color: white;
         }
 
         h3 {
           padding-left: 16px;
           margin: 0;
           border-left: 4px solid $brass;
+          width: 100%;
 
           .anchorjs-link {
             display: none;
@@ -449,6 +472,7 @@ footer.custom-footer {
 
         p {
           margin: 0;
+          width: 100%;
         }
 
       }
@@ -554,6 +578,17 @@ footer.custom-footer {
         font-family: "be vietnam pro";
         color: #f4f4f4;
         font-size: 14px;
+      }
+    }
+  }
+
+
+
+  // hero banner section
+  .hero-banner {
+    .content-block {
+      .hero-text {
+        max-width: 420px;
       }
     }
   }

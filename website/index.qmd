@@ -9,6 +9,10 @@ css: index.css
 
 ::: {.content-block}  
 
+::: {.hero-image-wrap}
+![placeholder image](assets/hero-image.png){.hero-image}
+:::
+
 ::: {.hero-text}
 # Hello World! <br> We're Software for Social Good
 Here at VCU, students from multi-disciplinary backgrounds connect with outer communities through projects that create social benefit.
@@ -17,10 +21,6 @@ Here at VCU, students from multi-disciplinary backgrounds connect with outer com
 [Learn more about us](){.btn .btn-primary .btn-lg role="button"}
 :::
 
-:::
-
-::: {.hero-image-wrap}
-![](assets/hero-image.png){.hero-image}
 :::
 
 :::
@@ -39,7 +39,7 @@ Here at VCU, students from multi-disciplinary backgrounds connect with outer com
 ::: our-pillars-text
 Experiment, learn, design and develop - We provide a sandbox for students to uncover their true potential.
 
-[Join Us](){.btn .btn-primary .btn-lg role="button"}
+[Join our team](){.btn .btn-primary .btn-lg role="button"}
 :::
 
 ::: {.pillars-card-wrap}
@@ -47,7 +47,7 @@ Experiment, learn, design and develop - We provide a sandbox for students to unc
 ::: {.pillars-card}
 
 ::: {.pillars-image-wrap}
-![](assets/ssg_logo_black_l2.svg){.hero-image}
+![placeholder image](assets/ssg_logo_black_l2.svg)
 :::
 
 <h3>Hands-on Experience</h3>
@@ -59,7 +59,7 @@ Provide students with opportunities to work on real-world software challenges.
 ::: {.pillars-card}
 
 ::: {.pillars-image-wrap}
-![](assets/ssg_logo_black_l2.svg){.hero-image}
+![placeholder image](assets/ssg_logo_black_l2.svg)
 :::
 
 <h3>Innovative Solutions</h3>
@@ -71,7 +71,7 @@ Build innovative and creative softwares with a socially beneficial bottom line.
 ::: {.pillars-card}
 
 ::: {.pillars-image-wrap}
-![](assets/ssg_logo_black_l2.svg){.hero-image}
+![placeholder image](assets/ssg_logo_black_l2.svg)
 :::
 
 <h3>Talent Development</h3>

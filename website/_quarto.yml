@@ -24,7 +24,7 @@ website:
       - text: "Our Team"
         file: about.qmd
       - text: "Projects"
-        file: about.qmd
+        href: pages/projects/index.qmd
       - text: "For Students"
         file: about.qmd
       - text: "Contact"

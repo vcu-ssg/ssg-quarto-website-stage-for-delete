@@ -40,6 +40,10 @@ $navbar-brand-padding-y: 1rem !default;
 
 /*-- scss:rules --*/
 
+.quarto-container {
+  overflow: hidden;
+}
+
 .btn {
   border-radius: 100px;
   padding: 10px 30px;
@@ -397,6 +401,7 @@ footer.custom-footer {
     display: flex;
     flex-direction: column;
     gap: 32px;
+
 
     h1 {
       text-align: center;

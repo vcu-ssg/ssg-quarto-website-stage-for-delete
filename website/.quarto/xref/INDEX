@@ -37,5 +37,8 @@
   },
   "pages/students/index.qmd": {
     "index.html": "f8938292"
+  },
+  "about/jdleonard.qmd": {
+    "jdleonard.html": "705895a1"
   }
 }

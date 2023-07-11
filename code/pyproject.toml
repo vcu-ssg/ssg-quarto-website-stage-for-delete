@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "sheet-tool"
+version = "0.1.0"
+description = "Scripts to connect google sheets to qmd files and web site"
+authors = ["John Leonard <jdleonard@vcu.edu>"]
+readme = "README.md"
+packages = [{include = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+loguru = "^0.7.0"
+click = "^8.1.4"
+click-aliases = "^1.0.1"
+gspread = "^5.10.0"
+oauth2client = "^4.1.3"
+tabulate = "^0.9.0"
+pandas = "^2.0.3"
+numpy = "^1.25.1"
+ipython = "^8.14.0"
+openpyxl = "^3.1.2"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0"
+
+[tool.poetry.scripts]
+sheet-tool = "src:_main.cli"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

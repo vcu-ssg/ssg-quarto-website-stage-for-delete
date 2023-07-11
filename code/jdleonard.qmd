@@ -1,0 +1,24 @@
+---
+title: "John Leonard"
+date: last-modified
+format:
+  html:
+    toc: false
+---
+
+John Leonard is co-founder and Mentor within the SSG. When not innovating on data platforms, John enjoys the best of Richmond - the Kickers, VCU Baseball, and Cary Town.
+
+## Education
+
+* Ph.D. in Engineering, University of California, Irvine
+* M.S. in Engineering, University of California, Irvine
+* B.S. in Engineering, University of California, Irvine
+
+## Experience
+
+* Professor, Department of Computer Science, VCU
+* Executive Dean, College of Engineering, VCU
+* Associate Dean, College of Engineering, Georgia Tech
+* Associate Professor, School of Civil and Environmental Engineering, Georgia Tech
+* Associate Professor, School of Civil and Environmental Engineering, Georgia Tech
+* Interim Executive Director, State Road and Tollway Authority, Georgia

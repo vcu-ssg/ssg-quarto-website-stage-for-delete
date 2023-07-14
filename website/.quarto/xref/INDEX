@@ -40,5 +40,14 @@
   },
   "about/jdleonard.qmd": {
     "jdleonard.html": "705895a1"
+  },
+  "pages/about/index.qmd": {
+    "index.html": "e8055aee"
+  },
+  "pages/about/inho-park/index.qmd": {
+    "index.html": "9574277f"
+  },
+  "pages/about/john-leonard/index.qmd": {
+    "index.html": "1f0b366b"
   }
 }

@@ -1,0 +1,55 @@
+---
+title: about SSG
+
+website:
+  sidebar:
+    contents: about.yml
+---
+
+[John Leonard](./john-leonard/index.qmd)
+
+::: {.team-member-popups}
+[John Leonard](javascript:void(0)){.btn .btn-primary .btn-lg .openPopupBtn}
+[Inho Park](javascript:void(0)){.btn .btn-primary .btn-lg .openPopupBtn}
+:::
+
+
+<!-- <button class="openPopupBtn" id="john-leonard">John Leonard</button> -->
+<div class="backdrop"></div>
+<div class="about-popup">
+  <div class="close back"></div>
+  <div class="popup-wrap"><i class="close bi bi-x-lg"></i><iframe class="popupIframe" src=""></iframe></div>
+</div>
+
+<script>
+  document.querySelectorAll('a.openPopupBtn').forEach(function (button) {
+    button.id = button.textContent.trim().toLowerCase().replace(/\s/g, '-')
+  });
+  var bodyElement = document.body; // <body> element
+  var popupDiv = document.querySelector('.about-popup'); // .about-popup element
+  var openPopupButtons = document.querySelectorAll('.openPopupBtn'); // .openPopupBtn element
+  var backDrop = document.querySelector('.backdrop');
+  openPopupButtons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      var buttonId = this.id;
+      document.querySelector('.popupIframe').setAttribute('src', buttonId);
+      popupDiv.classList.add('show');
+      backDrop.classList.add('show');
+      bodyElement.classList.add('no-scroll');
+      
+    });
+  });
+  
+  document.querySelectorAll('.close').forEach(function (closeElement) {
+    closeElement.addEventListener('click', function () {
+      popupDiv.classList.remove('show');
+      backDrop.classList.remove('show');
+      bodyElement.classList.remove('no-scroll');
+      
+      setTimeout(function () {
+        document.querySelector('.popupIframe').setAttribute('src', "");
+      }, 600);
+    });
+  });
+
+</script>

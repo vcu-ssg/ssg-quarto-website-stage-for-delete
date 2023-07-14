@@ -1,0 +1,9 @@
+website:
+  sidebar:
+    contents:
+    - section: Faculty
+      contents:
+        - text: Inho Park
+          href: inho-park/index.qmd
+        - text: John Leonard
+          href: john-leonard/index.qmd

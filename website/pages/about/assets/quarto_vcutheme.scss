@@ -1,0 +1,28 @@
+/*-- scss:defaults --*/
+
+//
+// Color system
+//
+$white: #fff !default;
+$black: #131313 !default;
+
+$vcu-gold: #f8b300 !default;
+$cs-green: #15845F !default;
+$light-gray: #f1f3f5 !default;
+$mid-gray: #75776d !default;
+$darker-gray: #687178 !default;
+
+// Navbar
+$navbar-bg: $cs-green !default;
+$navbar-brand-font-size: 1.5rem !default;
+$navbar-brand-padding-y: 0.8rem !default;
+
+/*-- scss:rules --*/
+
+.navbar-logo {
+  max-height: 50px;
+  padding-right:8px;
+}
+.navbar-brand {
+  font-weight: bold;
+}

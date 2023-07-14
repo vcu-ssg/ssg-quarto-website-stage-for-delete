@@ -22,7 +22,7 @@ website:
       - text: "Home"
         file: index.qmd
       - text: "Our Team"
-        file: about.qmd
+        file: pages/about/index.qmd
       - text: "Projects"
         href: pages/projects/index.qmd
       - text: "For Students"
@@ -36,6 +36,8 @@ website:
       - icon: discord
         href: https://discord.gg/xv29j9fVRd
         text: SSG Discord
+      - href: https://drive.google.com/drive/folders/1C-ZoZjMOefov00WoYVMJiCe4Avw8zg6c?usp=sharing
+        text: SSG Drive 
 
 format:
   html:

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.433">
+<meta name="generator" content="quarto-1.3.361">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -87,7 +87,7 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./about.html" rel="" target="" aria-current="page">
+    <a class="nav-link" href="./pages/about/index.html" rel="" target="">
  <span class="menu-text">Our Team</span></a>
   </li>  
   <li class="nav-item">
@@ -95,7 +95,7 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html" rel="" target="">
+    <a class="nav-link active" href="./about.html" rel="" target="" aria-current="page">
  <span class="menu-text">For Students</span></a>
   </li>  
   <li class="nav-item">
@@ -103,9 +103,10 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Contact</span></a>
   </li>  
 </ul>
-            <div class="quarto-navbar-tools">
-    <a href="https://github.com/vcu-ssg" rel="" title="SSG GitHub" class="quarto-navigation-tool px-1" aria-label="SSG GitHub"><i class="bi bi-github"></i></a>
-    <a href="https://discord.gg/xv29j9fVRd" rel="" title="SSG Discord" class="quarto-navigation-tool px-1" aria-label="SSG Discord"><i class="bi bi-discord"></i></a>
+            <div class="quarto-navbar-tools tools-wide">
+    <a href="https://github.com/vcu-ssg" title="SSG GitHub" class="quarto-navigation-tool px-1" aria-label="SSG GitHub"><i class="bi bi-github"></i></a>
+    <a href="https://discord.gg/xv29j9fVRd" title="SSG Discord" class="quarto-navigation-tool px-1" aria-label="SSG Discord"><i class="bi bi-discord"></i></a>
+    <a href="https://drive.google.com/drive/folders/1C-ZoZjMOefov00WoYVMJiCe4Avw8zg6c?usp=sharing" title="SSG Drive" class="quarto-navigation-tool px-1" aria-label="SSG Drive"><i class="bi bi-"></i></a>
 </div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
@@ -164,8 +165,9 @@ ul.task-list li input[type="checkbox"] {
           </div>
           <p class="ssg-desc">Software for Social Good is a faculty-led <a href="https://www.vip-consortium.org/" target="_blank">Vertically Integrated Project (VIP)</a> team at <a href="https://egr.vcu.edu/" target="_blank">VCU College of Engineering</a> founded in 2022.</p>
           <div class="tools-wrap">
-            <a href="https://github.com/vcu-ssg"><i class="bi bi-github"></i></a> 
-            <a href="https://discord.gg/xv29j9fVRd"><i class="bi bi-discord"></i></a>
+            <a href="https://github.com/vcu-ssg" target="_blank"><i class="bi bi-github"></i></a> 
+            <a href="https://discord.gg/xv29j9fVRd" target="_blank"><i class="bi bi-discord"></i></a>
+            <a href="https://drive.google.com/drive/folders/1C-ZoZjMOefov00WoYVMJiCe4Avw8zg6c?usp=sharing" target="_blank"><svg role="img" viewBox="0 0 24 24"><path d="M12.01 1.485c-2.082 0-3.754.02-3.743.047.01.02 1.708 3.001 3.774 6.62l3.76 6.574h3.76c2.081 0 3.753-.02 3.742-.047-.005-.02-1.708-3.001-3.775-6.62l-3.76-6.574zm-4.76 1.73a789.828 789.861 0 0 0-3.63 6.319L0 15.868l1.89 3.298 1.885 3.297 3.62-6.335 3.618-6.33-1.88-3.287C8.1 4.704 7.255 3.22 7.25 3.214zm2.259 12.653-.203.348c-.114.198-.96 1.672-1.88 3.287a423.93 423.948 0 0 1-1.698 2.97c-.01.026 3.24.042 7.222.042h7.244l1.796-3.157c.992-1.734 1.85-3.23 1.906-3.323l.104-.167h-7.249z"/></svg></a>
           </div>
         </div>
         <div class="footer-row">
@@ -204,11 +206,11 @@ ul.task-list li input[type="checkbox"] {
   </div>
   `);
 
-
+  //Scrol to element  
   let backtopElement = document.getElementById("backtop");
 
   window.addEventListener("scroll", function () {
-    if (window.pageYOffset > window.innerHeight/4) {
+    if (window.pageYOffset > window.innerHeight / 4) {
       backtopElement.style.opacity = 1;
       backtopElement.style.pointerEvents = "auto";
     } else {
@@ -223,7 +225,22 @@ ul.task-list li input[type="checkbox"] {
       behavior: "smooth",
     });
   });
+
+  // remove footer for about page pop-ups
+  customFooter = document.querySelector('footer.custom-footer');
+  if (document.querySelector('[class^="quarto-about-"]')) {
+    customFooter.style.display = 'none';
+    backtopElement.style.display = 'none';
+  }
+
+
+  // add a Google Drive link on the nav bar
+  let lastNavigationTool = navigationTools[navigationTools.length - 1];
+  lastNavigationTool.insertAdjacentHTML('beforeend', '<svg role="img" viewBox="0 0 24 24"><path d="M12.01 1.485c-2.082 0-3.754.02-3.743.047.01.02 1.708 3.001 3.774 6.62l3.76 6.574h3.76c2.081 0 3.753-.02 3.742-.047-.005-.02-1.708-3.001-3.775-6.62l-3.76-6.574zm-4.76 1.73a789.828 789.861 0 0 0-3.63 6.319L0 15.868l1.89 3.298 1.885 3.297 3.62-6.335 3.618-6.33-1.88-3.287C8.1 4.704 7.255 3.22 7.25 3.214zm2.259 12.653-.203.348c-.114.198-.96 1.672-1.88 3.287a423.93 423.948 0 0 1-1.698 2.97c-.01.026 3.24.042 7.222.042h7.244l1.796-3.157c.992-1.734 1.85-3.23 1.906-3.323l.104-.167h-7.249z"/></svg>');
+
 </script>
+
+
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

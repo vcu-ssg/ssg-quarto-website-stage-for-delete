@@ -47,5 +47,54 @@
     "title": "Quarto for Academics",
     "section": "",
     "text": "Quarto offers a myriad of features that are especially useful for academics, as educators and as researchers. These range from chunk options that enable automatic linking of code to documentation, to article templates for manuscript submission to multiple journals. The following video walks you through some of these features.\n\nSelect highlights include:\n\nLinking to documentation from code with code-link.\nInformative YAML errors and YAML completion.\nCreating Quarto slides with revealjs.\nPDF export of HTML slides.\nAnnotating slides with chalkboard.\nAdvancing slides for your audience with multiplex.\nHighlighting code with code-line-numbers.\nCustomizing output location with output-location.\nShowing code chunk fences with echo: fenced.\nCode annotation.\nAuthoring manuscripts with Quarto journal templates.\nInserting citations from Zotero or from a DOI with the RStudio Visual Editor.\n\nIf you would like to follow along as you watch, you can find the source code for everything created in the video in this GitHub repository."
+  },
+  {
+    "objectID": "pages/about/index.html",
+    "href": "pages/about/index.html",
+    "title": "about SSG",
+    "section": "",
+    "text": "John Leonard\n\nJohn Leonard Inho Park"
+  },
+  {
+    "objectID": "pages/about/inho-park/index.html",
+    "href": "pages/about/inho-park/index.html",
+    "title": "Inho Park",
+    "section": "",
+    "text": "Inho Park is the Chief Data Scientist at Wengo Analytics. When not innovating on data platforms, Finley enjoys spending time unicycling and playing with her pet iguana."
+  },
+  {
+    "objectID": "pages/about/inho-park/index.html#education",
+    "href": "pages/about/inho-park/index.html#education",
+    "title": "Inho Park",
+    "section": "Education",
+    "text": "Education\nVirginia Commonwealth University | Richmond, VA PhD in Engineering | June 1991"
+  },
+  {
+    "objectID": "pages/about/inho-park/index.html#experience",
+    "href": "pages/about/inho-park/index.html#experience",
+    "title": "Inho Park",
+    "section": "Experience",
+    "text": "Experience\nVirginia Commonwealth University | Designer | 2021 - present"
+  },
+  {
+    "objectID": "pages/about/john-leonard/index.html",
+    "href": "pages/about/john-leonard/index.html",
+    "title": "John Leonard",
+    "section": "",
+    "text": "John Leonard is co-founder and Mentor within the SSG. When not innovating on data platforms, John enjoys the best of Richmond - the Kickers, VCU Baseball, and Cary Town."
+  },
+  {
+    "objectID": "pages/about/john-leonard/index.html#education",
+    "href": "pages/about/john-leonard/index.html#education",
+    "title": "John Leonard",
+    "section": "Education",
+    "text": "Education\n\nPh.D. in Engineering, University of California, Irvine\nM.S. in Engineering, University of California, Irvine\nB.S. in Engineering, University of California, Irvine"
+  },
+  {
+    "objectID": "pages/about/john-leonard/index.html#experience",
+    "href": "pages/about/john-leonard/index.html#experience",
+    "title": "John Leonard",
+    "section": "Experience",
+    "text": "Experience\n\nProfessor, Department of Computer Science, VCU\nExecutive Dean, College of Engineering, VCU\nAssociate Dean, College of Engineering, Georgia Tech\nAssociate Professor, School of Civil and Environmental Engineering, Georgia Tech\nAssociate Professor, School of Civil and Environmental Engineering, Georgia Tech\nInterim Executive Director, State Road and Tollway Authority, Georgia"
   }
 ]

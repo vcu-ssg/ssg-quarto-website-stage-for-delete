@@ -1,0 +1,692 @@
+/*-- scss:defaults --*/
+
+// Type system
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+$font-size-root: 16px;
+$font-size-base: 1rem !default;
+
+$h1-font-size: $font-size-base*2.5 !default;
+$h2-font-size: $font-size-base*2 !default;
+$h3-font-size: $font-size-base*1.75 !default;
+$h4-font-size: $font-size-base*1.5 !default;
+$h5-font-size: $font-size-base*1.25 !default;
+$h6-font-size: $font-size-base !default;
+
+// Color system
+$white: #f4f4f4 !default;
+$black: #212121 !default;
+$gray: #3E3E3E !default;
+$medium-gray: #898989 !default;
+$light-gray: #E4E4E4 !default;
+$brass: #C5947C !default;
+$light-brass: #ffeee6 !default;
+
+// Bootstrap color system
+$btn-primary-color: $white;
+
+$primary: $brass !default;
+$secondary: $brass !default;
+$success: $brass !default;
+$info: $brass !default;
+$warning: $brass !default;
+$danger: $brass !default;
+$light: $brass !default;
+$dark: $brass !default;
+
+// Navbar
+$navbar-bg: $black !default;
+$navbar-brand-padding-y: 1rem !default;
+
+/*-- scss:rules --*/
+
+.quarto-container {
+  overflow: hidden;
+}
+
+.btn {
+  border-radius: 100px;
+  padding: 10px 30px;
+  min-width: 200px;
+}
+
+.btn-primary {
+  color: $white;
+
+  &:hover {
+    color: $white;
+  }
+}
+
+
+a {
+  color: $brass;
+}
+
+// Header
+
+header {
+  transition: transform 100ms linear !important; //navbar collapse 
+
+  .navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    background: url(./assets/ssg_pattern.svg) repeat-x;
+    background-color: $black;
+    background-size: 280px 80px;
+    background-position: top left;
+    position: relative;
+
+    .navbar-container {
+      align-items: stretch !important;
+      -webkit-align-items: stretch !important;
+
+      .navbar-brand-container {
+        .navbar-brand {
+          .navbar-logo {
+            max-height: 48.01px;
+          }
+        }
+      }
+
+      .collapse {
+        align-items: stretch !important;
+        -webkit-align-items: stretch !important;
+
+        // tools (github, discord icon)
+        .quarto-navbar-tools {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          -webkit-align-items: center;
+          padding: 12px 0;
+
+          .quarto-navigation-tool {
+            margin: 0 8px;
+
+            .bi {
+              font-size: 1.5rem;
+              transition: opacity .1s;
+              color: $white;
+              opacity: .4;
+
+              &:hover {
+                color: $light-brass;
+                opacity: 1;
+              }
+            }
+
+            svg {
+              fill: $white;
+              width: 24px;
+              display: flex;
+              align-items: center;
+              transition: opacity .1s;
+              opacity: .4;
+
+              &:hover {
+                fill: $light-brass;
+                opacity: 1;
+              }
+            }
+          }
+        }
+
+        // nav bar menu items
+        .navbar-nav {
+          .nav-item {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            position: relative;
+
+            &::after {
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              margin: 0 auto;
+              display: block;
+              content: "";
+              width: 100%;
+              height: 1.5px;
+              background-color: $white;
+              opacity: 0.1;
+            }
+
+            &:first-of-type {
+              margin-top: 16px;
+            }
+
+            .nav-link {
+              top: 0;
+              bottom: 0;
+              width: 100%;
+              padding: 8px 16px !important;
+              color: $white !important;
+              opacity: 0.4;
+              font-size: 1rem;
+
+              &:hover {
+                background-color: rgba(255, 255, 255, 0.1);
+                opacity: 1;
+                color: $light-brass !important;
+              }
+
+              &.active {
+                background-color: rgba(255, 255, 255, 0.1);
+                opacity: 1;
+                color: $light-brass !important;
+              }
+            }
+          }
+        }
+      }
+
+      // search bar on nav
+      .type-overlay {
+        display: flex;
+        align-items: center;
+        -webkit-align-items: center;
+        justify-content: center;
+        margin-right: 16px;
+
+        .aa-SubmitIcon:hover {
+          color: $light-brass !important;
+          transition: color 100ms linear;
+        }
+      }
+    }
+  }
+}
+
+// Footer
+footer.custom-footer {
+  background-color: $black;
+
+  p {
+    padding: 0;
+    margin: 0;
+    font-family: "be vietnam pro";
+    color: $medium-gray;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+
+  a {
+    text-decoration: none;
+    margin-bottom: 2px;
+    color: $medium-gray;
+
+    &:hover p {
+      color: $white;
+      transition: color .3s;
+    }
+  }
+
+  .footer-container {
+    display: flex;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0 48px;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 900px;
+
+    .footer-top {
+      display: flex;
+      width: 100%;
+      padding: 64px 0;
+      justify-content: space-between;
+      align-items: flex-start;
+      row-gap: 40px;
+      align-self: stretch;
+      flex-wrap: wrap;
+
+      .footer-row {
+        display: flex;
+        width: 320px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 36px;
+
+        &:first-of-type {
+          margin-right: 80px;
+        }
+
+        &:nth-of-type(2) {
+          gap: 16px;
+        }
+
+        .logo-wrap {
+          width: 100%;
+
+          img.ssg-logo {
+            width: 100%;
+          }
+        }
+
+        &:first-of-type {
+          a {
+            text-decoration: underline;
+
+            &:hover {
+              color: $white;
+              transition: color .3s;
+            }
+          }
+        }
+
+        .tools-wrap {
+          display: flex;
+          align-items: center;
+          gap: 24px;
+
+          .bi {
+            font-size: 32px;
+            color: $medium-gray;
+
+            &:hover {
+              color: $white;
+              transition: color .3s;
+            }
+          }
+
+          svg {
+            fill: $medium-gray;
+            width: 30px;
+            display: flex;
+            align-items: center;
+            transition: fill .3s;
+
+            &:hover {
+              fill: $white;
+            }
+          }
+        }
+
+        .link-wrap {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          align-self: stretch;
+
+          .footer-link {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            .bi {
+              width: 20px;
+              font-size: 20px;
+              color: $white;
+            }
+
+            p.link-list-title {
+              font-size: 16px;
+              color: $white;
+              font-weight: 600;
+            }
+
+          }
+
+          &:nth-of-type(2) .bi {
+            margin-left: -4px;
+            width: 24px;
+          }
+
+          &:nth-of-type(3) .bi {
+            margin-left: -3px;
+            width: 23px;
+          }
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    padding: 24px 0;
+    width: 100%;
+    border-top: 1px solid $gray;
+
+    p.copyright {
+      text-align: center;
+    }
+  }
+}
+
+// Scroll Top
+
+.scroll-top {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+// hero banner section
+
+.hero-banner {
+  min-height: 75vh;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+
+  .content-block {
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+
+    .hero-text {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      max-width: 800px;
+
+      h1,
+      p {
+        margin: 0;
+      }
+
+      .btn {
+        margin: 32px 0 0 -3px;
+      }
+    }
+
+    .hero-image-wrap {
+      margin-top: 40px;
+      width: 420px;
+    }
+  }
+}
+
+
+
+// our pillars section
+
+.our-pillars {
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 100px;
+
+  .content-block {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+
+    h1 {
+      text-align: center;
+      margin: 0 0 32px 0;
+      position: relative;
+
+      &::before,
+      &::after {
+        display: block;
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: $light-gray;
+        top: 45%;
+      }
+
+      &::before {
+        left: -50%;
+        transform: translateX(-120px);
+      }
+
+      &::after {
+        left: 50%;
+        transform: translateX(120px);
+      }
+    }
+
+    .our-pillars-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-self: center;
+      gap: 24px;
+
+      p {
+        max-width: 500px;
+        text-align: center;
+      }
+    }
+
+    .pillars-card-wrap {
+      margin-top: 24px;
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+      width: 100%;
+
+      .pillars-card {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        box-sizing: content-box;
+        width: 200px;
+
+        .pillars-image-wrap {
+          height: 150px; //temporary property
+          opacity: .2; //temporary property
+          border: 1px solid;
+          width: 100%;
+          background-color: white;
+        }
+
+        h3 {
+          padding-left: 16px;
+          margin: 0;
+          border-left: 4px solid $brass;
+          width: 100%;
+
+          .anchorjs-link {
+            display: none;
+          }
+        }
+
+        p {
+          margin: 0;
+          width: 100%;
+        }
+
+      }
+    }
+  }
+}
+
+
+
+// about page pop-up
+.about-popup {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: -100%;
+  width: 100%;
+  height: 100%;
+  transition: bottom .8s;
+  z-index: 999;
+
+  .backdrop {
+    display: block;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: $black;
+    opacity: 0;
+    transition: opacity .8s;
+  }
+
+  &.show {
+    bottom: 0;
+
+    .backdrop {
+      top:0;
+      bottom:0;
+      opacity: .4;
+    }
+  }
+
+  .popup-wrap {
+    width: 70vw;
+    height: 75vh;
+    background-color: $white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+
+    .bi-x-lg {
+      position: absolute;
+      top: -48px;
+      right: 0;
+      color: $white;
+      font-size: 32px;
+      cursor: pointer;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+body.no-scroll {
+  height: 100vh;
+  overflow: hidden;
+}
+
+
+
+@media all and (min-width: 992px) {
+
+  //header
+
+  header {
+    .navbar {
+      .navbar-container {
+        max-width: 1000px;
+        margin: 0 auto;
+
+        .type-overlay {
+          margin-right: 0;
+        }
+
+        .collapse {
+          .navbar-nav {
+            .nav-item {
+
+              &:first-of-type {
+                margin-top: 0;
+              }
+
+              &::after {
+                height: 0;
+              }
+
+              &:has(.nav-link.active)::after {
+                background-color: $white;
+                opacity: .8;
+                width: 100%;
+                height: 6px;
+              }
+
+              .nav-link {
+                border-radius: 8px;
+                padding: 4px 16px;
+
+                &.active {
+                  background-color: transparent;
+
+                  &:hover {
+                    background-color: rgba(255, 255, 255, 0.1);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Scroll Top
+
+  #backtop {
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    width: 56px;
+    height: 56px;
+    cursor: pointer;
+    transition: opacity .1s;
+
+    .scroll-top {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 100%;
+      width: 56px;
+      height: 56px;
+      background-color: #3E3E3E;
+      gap: 2px;
+      opacity: .5;
+      transition: opacity .1s;
+
+      &:hover {
+        opacity: 1;
+      }
+
+      .bi-caret-up-fill {
+        margin-top: 14px;
+        color: $white;
+        display: flex;
+        align-items: center;
+        height: 8px;
+      }
+
+      p {
+        font-family: "be vietnam pro";
+        color: #f4f4f4;
+        font-size: 14px;
+      }
+    }
+  }
+
+
+
+  // hero banner section
+  .hero-banner {
+    .content-block {
+      .hero-text {
+        max-width: 420px;
+      }
+    }
+  }
+}

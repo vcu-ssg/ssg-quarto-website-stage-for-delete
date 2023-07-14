@@ -1,0 +1,23 @@
+---
+title: "Inho Park"
+image: inho-park.jpg
+navbar: false
+about:
+  template: jolla
+  links:
+    - icon: twitter
+      text: Twitter
+      href: https://twitter.com
+---
+
+Inho Park is the Chief Data Scientist at Wengo Analytics. When not innovating on data platforms, Finley enjoys spending  time unicycling and playing with her pet iguana.
+
+## Education
+
+Virginia Commonwealth University | Richmond, VA
+PhD in Engineering | June 1991
+
+## Experience
+
+Virginia Commonwealth University | Designer | 2021 - present
+
